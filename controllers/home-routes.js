@@ -3,7 +3,7 @@ const { Post, User, Comment } = require("../models");
 
 router.get("/", (req, res) => {
   Post.findAll({
-    attributes: ["id", "post", "author", "created_at"],
+    attributes: ["id", "post_title", "post_body", "created_at"],
     include: [
       {
         model: Comment,
@@ -39,7 +39,7 @@ router.get("/post/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "post", "author", "created_at"],
+    attributes: ["id", "post_title", "post_body", "created_at"],
     include: [
       {
         model: Comment,

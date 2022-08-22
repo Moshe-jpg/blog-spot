@@ -11,11 +11,13 @@ Post.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    author: {
+    post_title: {
       type: DataTypes.STRING,
       allowNull: false,
+      min: 15,
+      max: 45,
     },
-    post: {
+    post_body: {
       type: DataTypes.STRING,
       allowNull: false,
       min: 15,
