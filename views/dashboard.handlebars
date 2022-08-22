@@ -1,7 +1,6 @@
 <div class="dashboard-page">
 <section>
   <h2>Write A New Post</h2>
-
   <form class="new-post-form">
     <div class="inputBox">
       <input type="text" id="post-title" name="post-title" />
@@ -26,6 +25,7 @@
       {{> post-info post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
     </li>
+    <hr>
     {{/each}}
   </ol>
 </section>

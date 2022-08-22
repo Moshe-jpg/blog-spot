@@ -40,6 +40,10 @@ a:hover {
 
 /* Styling for the forms */
 
+input {
+  text-align: center;
+}
+
 .inputBox {
   position: relative;
   width: 100%;
@@ -123,7 +127,7 @@ button:hover {
   height: auto;
 }
 
-.quote-list {
+.post-list {
   margin: 5%;
   display: flex;
   flex-wrap: wrap;
@@ -132,7 +136,7 @@ button:hover {
   padding: 0;
 }
 
-.quote-list li {
+.post-list li {
   background-color: #876429;
   color: #ffffff;
   flex-basis: 40%;
@@ -213,20 +217,12 @@ header h1 {
   margin: 15% 20%;
 }
 
-.delete-post-btn {
-  background-color: #d41414;
-}
-
-.delete-post-btn:hover {
-  background-color: #ff643d;
-}
-
-.quote {
+.post {
   margin-bottom: 2%;
   line-height: 150%;
 }
 
-.quote .title span {
+.post .title span {
   font-style: italic;
   font-size: 90%;
   color: #7d7d7d;
@@ -237,7 +233,7 @@ header h1 {
   margin: -1.5% 0 2% 0;
 }
 
-.single-quote {
+.single-post {
   text-align: center;
   margin: 2% 5%;
 }
@@ -258,20 +254,20 @@ header h1 {
   opacity: 0.6;
 }
 
-.new-quote-form input {
+.new-post-form input {
   width: 300px;
 }
 
-.edit-quote {
+.edit-post {
   text-align: center;
 }
 
-#edit-quote-input {
+#edit-post-input {
   min-width: 40%;
   min-height: 100px;
 }
 
-.edit-quote-form {
+.edit-post-form {
   margin-bottom: 5%;
 }
 
@@ -294,7 +290,7 @@ footer {
     letter-spacing: 1px;
   }
 
-  .quote-list li {
+  .post-list li {
     flex-basis: 100%;
   }
 }

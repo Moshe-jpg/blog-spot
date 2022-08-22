@@ -1,4 +1,4 @@
-const editPostBtn = document.querySelector(".edit-post-form");
+const editPostForm = document.querySelector(".edit-post-form");
 
 async function editFormHandler(event) {
   event.preventDefault();
@@ -24,4 +24,4 @@ async function editFormHandler(event) {
   }
 }
 
-editPostBtn.addEventListener("submit", editFormHandler);
+editPostForm.addEventListener("submit", editFormHandler);
