@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background: #1d2b3a;
+}
+
+body,
+html {
+  height: 100%;
+  color: #fff;
+  gap: 30px;
+  background: #1d2b3a;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: rgb(0, 128, 107);
+  transition: color 0.5s;
+}
+
+/* .login-form, .signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+  } */
+
+/* Styling for the forms */
+
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #1d2b3a;
+  border-radius: 5px;
+  outline: none;
+  color: #ffffff;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: rgb(0, 128, 107);
+  transform: translateX(30px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #1d2b3a;
+  border-left: 1px solid rgb(0, 128, 107);
+  border-right: 1px solid rgb(0, 128, 107);
+  letter-spacing: 0.2em;
+}
+
+.inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span {
+  background: rgb(0, 128, 107);
+  color: #1d2b3a;
+  border-radius: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 1px solid rgb(0, 128, 107);
+}
+
+/* The input buttons */
+
+.inputBoxBtn {
+  text-align: center;
+}
+
+button {
+  background-color: #000000;
+  border: 0;
+  height: 5vh;
+  width: 10vw;
+  padding: 1%;
+  color: rgb(0, 128, 107);
+  font-weight: bold;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: 1.25px;
+}
+
+button:hover {
+  background-color: rgb(0, 128, 107);
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.add-comment-btn {
+  height: auto;
+}
+
+.quote-list {
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.quote-list li {
+  background-color: #876429;
+  color: #ffffff;
+  flex-basis: 40%;
+  list-style: none;
+  font-size: 1em;
+  font-weight: bolder;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  padding: 10px 22px;
+  overflow-wrap: break-word;
+}
+
+textarea,
+input {
+  padding: 0.5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border: 1px solid #3486eb;
+}
+
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+}
+
+form > div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+.login-page {
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  min-height: 100vh;
+  /* flex-direction: column; */
+  gap: 30px;
+  background: #1d2b3a;
+}
+
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  margin: 15% 20%;
+}
+
+.delete-post-btn {
+  background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+  background-color: #ff643d;
+}
+
+.quote {
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+
+.quote .title span {
+  font-style: italic;
+  font-size: 90%;
+  color: #7d7d7d;
+}
+
+.edit-link {
+  display: block;
+  margin: -1.5% 0 2% 0;
+}
+
+.single-quote {
+  text-align: center;
+  margin: 2% 5%;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: 0.5%;
+  opacity: 0.6;
+}
+
+.new-quote-form input {
+  width: 300px;
+}
+
+.edit-quote {
+  text-align: center;
+}
+
+#edit-quote-input {
+  min-width: 40%;
+  min-height: 100px;
+}
+
+.edit-quote-form {
+  margin-bottom: 5%;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 110%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  button {
+    width: 25vw;
+    letter-spacing: 1px;
+  }
+
+  .quote-list li {
+    flex-basis: 100%;
+  }
+}
