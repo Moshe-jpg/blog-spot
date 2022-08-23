@@ -2,18 +2,20 @@
   <div class="title">
   </div>
   <div class="meta">
-        <p>
+        <p class="post-title">
          {{post_title}}
         </p>
-        <q>
+        <p class="post-body">
          {{post_body}}
-        </q>
-        </br>
-        {{user.username}}
-        </br>
-        posted on
-        {{format_date created_at}} ||
-        <a href="/post/{{id}}">{{comments.length}}
-        {{format_plural "comment" comments.length}}</a>
+        </p>
+        <hr>
+        <div class="post-user-info">
+          {{user.username}}
+          </br>
+          posted on
+          {{format_date created_at}} ||
+          <a href="/post/{{id}}">{{comments.length}}
+          {{format_plural "comment" comments.length}}</a>
+        </div>
   </div>
 </article>
