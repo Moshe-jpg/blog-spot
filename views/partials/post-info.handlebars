@@ -11,10 +11,9 @@
         <hr>
         <div class="post-user-info">
           {{user.username}}
-          </br>
           posted on
           {{format_date created_at}} ||
-          <a href="/post/{{id}}">{{comments.length}}
+          <a class="comments-btn" href="/post/{{id}}">{{comments.length}}
           {{format_plural "comment" comments.length}}</a>
         </div>
   </div>

@@ -7,7 +7,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  background: linear-gradient(45deg #D9F8C4, #F9F9C5, #FAD9A1, #F37878);
+  background:#D9F8C4;
 }
 
 body,
@@ -15,7 +15,7 @@ html {
   height: auto;
   color: #000;
   gap: 30px;
-  background: linear-gradient(150deg, #D9F8C4, #F9F9C5, #FAD9A1, #F37878);
+  background:#D9F8C4;
 }
 
 a {
@@ -76,8 +76,6 @@ input {
   letter-spacing: 0.2em;
 }
 
-
-
 .inputBox input:focus {
   border: 1px solid #000000;
 }
@@ -89,12 +87,12 @@ input {
 }
 
 button {
-  background-color: #000000;
+  background-color: #4C3575;
   border: 0;
   height: 5vh;
   width: 10vw;
   padding: 1%;
-  color: rgb(0, 128, 107);
+  color: #ffffff;
   font-weight: bold;
   transition: background-color 0.1s;
   cursor: pointer;
@@ -104,7 +102,7 @@ button {
 
 button:hover {
   background-color: rgb(0, 128, 107);
-  color: #ffffff;
+  color: #F2D7D9;
   transition: 0.5s;
 }
 
@@ -186,7 +184,6 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #000;
   background: #748DA6;
   width: 100%;
   display: flex;
@@ -229,9 +226,24 @@ header h1 {
   color: #7d7d7d;
 }
 
+.comments-btn {
+  color: #4C3575;
+  transition: 0.5s;
+}
+
+.comments-btn:hover {
+  color: #000;
+  transition: 0.5s;
+}
+
 .edit-link {
+  color: #4C3575;
   display: block;
   margin: -1.5% 0 2% 0;
+}
+
+.edit-link:hover {
+  color: #000;
 }
 
 .single-post {
@@ -255,6 +267,10 @@ header h1 {
   opacity: 0.6;
 }
 
+.new-post-header {
+  text-align: center;
+}
+
 .new-post-form input {
   width: 300px;
 }
@@ -273,15 +289,10 @@ header h1 {
 }
 
 footer {
-  border-top: 1px solid #ccc;
+  background: #748DA6;
   display: flex;
   justify-content: center;
   padding: 1%;
-  font-size: 110%;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
   width: 100%;
 }
 

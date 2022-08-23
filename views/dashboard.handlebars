@@ -1,13 +1,13 @@
 <div class="dashboard-page">
 <section>
-  <h2>Write A New Post</h2>
+  <h2 class="new-post-header">Write A New Post</h2>
   <form class="new-post-form">
     <div class="inputBox">
-      <input type="text" id="post-title" name="post-title" />
+      <input type="text" id="post-title" name="post-title" required="required"/>
       <span>Title</span>
     </div>
     <div class="inputBox">
-      <input type="text" id="post-body" name="post-body" />
+      <input type="text" id="post-body" name="post-body" required="required"/>
       <span>Post</span>
     </div>
     <div class="inputBoxBtn">
@@ -18,14 +18,13 @@
 
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
+  <h2 class="new-post-header">Posts</h2>
   <ol>
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
     </li>
-    <hr>
     {{/each}}
   </ol>
 </section>

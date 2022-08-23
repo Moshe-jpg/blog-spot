@@ -5,32 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Spot</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
-    <link rel="icon" href="/images/blogging.png">
+    <link rel="icon" href="/images/blogging.png" />
   </head>
 
   <body>
+    <header>
+      <h1>
+        <a href="/">Blog Spot</a>
+      </h1>
+      <nav>
+        {{#if loggedIn}}
+          <a href="/dashboard">Dashboard</a>
+          <a id="logout">Logout</a>
+        {{else}}
+          <a href="/login">Login</a>
+        {{/if}}
+      </nav>
+    </header>
     <div class="wrapper">
-      <header>
-        <h1>
-          <a href="/">Blog Spot</a>
-        </h1>
-        <nav>
-          {{#if loggedIn}}
-            <a href="/dashboard">Dashboard</a>
-            <a id="logout">Logout</a>
-          {{else}}
-            <a href="/login">Login</a>
-          {{/if}}
-        </nav>
-      </header>
       <main>
         {{{body}}}
       </main>
-      <footer>
-        <p>Blog Spot &copy; 2022</p>
-      </footer>
     </div>
-
+    <footer>
+      <p>Blog Spot &copy; 2022</p>
+    </footer>
     {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>
     {{/if}}
