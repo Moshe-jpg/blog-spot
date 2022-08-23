@@ -7,7 +7,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  background:#D9F8C4;
+  background:#ffffff;
 }
 
 body,
@@ -15,7 +15,7 @@ html {
   height: auto;
   color: #000;
   gap: 30px;
-  background:#D9F8C4;
+  background:#ffffff;
 }
 
 a {
